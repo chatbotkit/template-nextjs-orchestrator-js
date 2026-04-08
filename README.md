@@ -2,6 +2,10 @@
 
 A business orchestration template built with Next.js, NextAuth (Google OAuth), shadcn/ui, and ChatBotKit. Create companies, deploy AI agents with pre-configured tools (file read/write, shell/bash, shared workspace), and assign tasks.
 
+<img width="30%" src="https://github.com/user-attachments/assets/a9659d11-260b-40e8-9243-90bbfd4d812d" /> <img width="30%" src="https://github.com/user-attachments/assets/df001641-7a20-4975-b0f6-341395ce8dc2" /> <img width="30%" src="https://github.com/user-attachments/assets/d17b1607-b726-4a1d-a2c7-0bdf3afa7c5b" /> 
+
+<img width="30%" src="https://github.com/user-attachments/assets/66e16451-8b41-4b70-83bc-7a1b466b3b8b" /> <img width="30%" src="https://github.com/user-attachments/assets/bed4a28e-ceda-4943-899f-e116ad3146d4" />
+
 > **Note:** This template is deliberately bare-bones. It provides the minimal structure and wiring needed to get a working app, intentionally leaving styling, layout, and architectural choices open so you can build on top without fighting existing opinions.
 
 ## Why ChatBotKit?

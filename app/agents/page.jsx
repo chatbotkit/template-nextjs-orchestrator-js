@@ -15,11 +15,5 @@ export default async function Page() {
 
   const models = getAgentModels()
 
-  return (
-    <AgentsPage
-      userName={session?.user?.name}
-      userImage={session?.user?.image}
-      models={models}
-    />
-  )
+  return <AgentsPage models={models} />
 }

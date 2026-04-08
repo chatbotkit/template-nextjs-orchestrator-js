@@ -2,6 +2,8 @@
 
 A business orchestration template built with Next.js, NextAuth (Google OAuth), shadcn/ui, and ChatBotKit. Create companies, deploy AI agents with pre-configured tools (file read/write, shell/bash, shared workspace), and assign tasks.
 
+> **Note:** This template is deliberately bare-bones. It provides the minimal structure and wiring needed to get a working app, intentionally leaving styling, layout, and architectural choices open so you can build on top without fighting existing opinions.
+
 ## Why ChatBotKit?
 
 Building an AI orchestration system typically means sourcing models, a conversation layer, background processing, storage, a tested abilities catalogue, authentication, security, monitoring, and more from separate systems. The cost adds up fast - not just in money, but in engineering time.
@@ -49,6 +51,29 @@ ChatBotKit brings all of this into one platform. This template gets you started 
 | `NEXTAUTH_URL`          | Your app URL (e.g. `http://localhost:3000`)             |
 | `GOOGLE_CLIENT_ID`      | Google OAuth client ID                                  |
 | `GOOGLE_CLIENT_SECRET`  | Google OAuth client secret                              |
+
+### Setting Up ChatBotKit
+
+1. Sign up or log in at [chatbotkit.com](https://chatbotkit.com)
+2. Go to [chatbotkit.com/tokens](https://chatbotkit.com/tokens) and create an API token
+3. Copy the API token to `CHATBOTKIT_API_SECRET` in your `.env` file
+
+No pre-configured bots are needed. The app creates companies (blueprints) and agents (bots) dynamically, each with pre-configured tools for file access, shell execution, and shared workspace storage.
+
+### Getting Google OAuth Credentials
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+2. Create a new OAuth 2.0 Client ID
+3. Set authorized redirect URI to `http://localhost:3000/api/auth/callback/google`
+4. Copy the Client ID and Client Secret to your `.env` file
+
+### Generating a NextAuth Secret
+
+Run the following command and paste the output into your `.env` file:
+
+```bash
+openssl rand -base64 32
+```
 
 ## Architecture
 

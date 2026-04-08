@@ -81,7 +81,7 @@ export default function AgentsPage({ userName, userImage, models = [] }) {
   const [newAgentDescription, setNewAgentDescription] = useState('')
   const [newAgentBackstory, setNewAgentBackstory] = useState('')
   const [newAgentModel, setNewAgentModel] = useState(
-    models[0]?.value || 'gpt-4o'
+    models[0]?.value || 'gpt-5.4-mini'
   )
   const [creatingAgent, setCreatingAgent] = useState(false)
 
@@ -160,7 +160,7 @@ export default function AgentsPage({ userName, userImage, models = [] }) {
       setNewAgentName('')
       setNewAgentDescription('')
       setNewAgentBackstory('')
-      setNewAgentModel(models[0]?.value || 'gpt-4o')
+      setNewAgentModel(models[0]?.value || 'gpt-5.4-mini')
     } catch (err) {
       console.error('Failed to create agent:', err)
     } finally {

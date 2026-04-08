@@ -173,7 +173,7 @@ export async function complete({ botId, contactId, conversationId, messages }) {
       : {
           backstory:
             'You are a helpful business assistant. You help users manage their tasks and operations.',
-          model: 'gpt-4o',
+          model: 'gpt-5.4-mini',
         }),
 
     ...(contactId ? { contactId } : {}),

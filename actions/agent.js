@@ -66,7 +66,7 @@ export async function createAgent({
     backstory:
       backstory ||
       `You are ${name}, a helpful AI agent. You assist with business tasks and can read/write files, execute commands, and collaborate with other agents through a shared workspace.`,
-    model: model || 'gpt-4o',
+    model: model || 'gpt-5.4-mini',
   })
 
   return {

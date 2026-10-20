@@ -50,7 +50,7 @@ ChatBotKit brings all of this into one platform. This template gets you started 
 
 | Variable                | Description                                             |
 | ----------------------- | ------------------------------------------------------- |
-| `CHATBOTKIT_API_SECRET` | ChatBotKit API token from https://chatbotkit.com/tokens |
+| `CHATBOTKIT_API_TOKEN` | ChatBotKit API token from https://chatbotkit.com/tokens |
 | `NEXTAUTH_SECRET`       | Random secret for NextAuth JWT encryption               |
 | `NEXTAUTH_URL`          | Your app URL (e.g. `http://localhost:3000`)             |
 | `GOOGLE_CLIENT_ID`      | Google OAuth client ID                                  |
@@ -60,7 +60,7 @@ ChatBotKit brings all of this into one platform. This template gets you started 
 
 1. Sign up or log in at [chatbotkit.com](https://chatbotkit.com)
 2. Go to [chatbotkit.com/tokens](https://chatbotkit.com/tokens) and create an API token
-3. Copy the API token to `CHATBOTKIT_API_SECRET` in your `.env` file
+3. Copy the API token to `CHATBOTKIT_API_TOKEN` in your `.env` file
 
 No pre-configured bots are needed. The app creates companies (blueprints) and agents (bots) dynamically, each with pre-configured tools for file access, shell execution, and shared workspace storage.
 

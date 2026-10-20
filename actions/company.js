@@ -7,7 +7,7 @@ import authOptions from '@/lib/auth-options'
 import { ChatBotKit } from '@chatbotkit/sdk'
 
 const cbk = new ChatBotKit({
-  secret: process.env.CHATBOTKIT_API_SECRET,
+  secret: process.env.CHATBOTKIT_API_TOKEN,
 })
 
 /**

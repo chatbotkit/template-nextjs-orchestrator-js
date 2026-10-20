@@ -10,7 +10,7 @@ import { ChatBotKit } from '@chatbotkit/sdk'
 import crypto from 'node:crypto'
 
 const cbk = new ChatBotKit({
-  secret: process.env.CHATBOTKIT_API_SECRET,
+  secret: process.env.CHATBOTKIT_API_TOKEN,
 })
 
 /**
